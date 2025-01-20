@@ -71,7 +71,7 @@ class poweredup_control():
             if data[0] == 0x01:  # "write stdout" event (0x01)
                 payload = data[1:]
                 if payload == b"rdy":
-                    print("rdy received")
+                    #print("rdy received")
                     ready_event.set()
                 else:
                     print("Received:", payload)
